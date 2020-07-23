@@ -33,7 +33,7 @@ const autoscroll = () => {
     // How far I scrolled?
     const scrollOffset = $messages.scrollTop + visibleHeight
 
-    if (containerHeight - newMessageHeight <= scrollOffset) {
+    if ((containerHeight - newMessageHeight) <= scrollOffset) {
         $messages.scrollTop = $messages.scrollHeight
     }
 }
